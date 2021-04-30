@@ -1,0 +1,37 @@
+*{
+    background-color: blueviolet;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: chartreuse;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@keyframes spin{
+    from{
+        transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+    }
+}
+.imgspn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    -webkit-animation-name: spin;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+}
