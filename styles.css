@@ -1,7 +1,8 @@
 *{
     background-color: blueviolet;
 }
-p{
+button{
+    font-size: large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: chartreuse;
     display: block;
