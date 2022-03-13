@@ -10,6 +10,9 @@ button{
     margin-right: auto;
     
 }
+p{
+    color: green;
+}
 
 @keyframes spin{
     from{
