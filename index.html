@@ -4,32 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Down Bad</title>
-   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"><script src="https://code.jquery.com/jquery-1.12.4.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>DOWN BAD</title>
+   
    <link rel="stylesheet" href ="styles.css">   
 </head>
 <body>
     <input type="button" id="box" value="Can I really get that second date?"/>
     <div id="dialog-confirm"></div>
-    <script>$('#box').click(function buttonAction() {
-               $("#dialog-confirm").html("Can I really get that second date?");
-               $("#dialog-confirm").dialog({
-                   resizable: false,
-                   modal: true,
-                   title: "btw this is not so intrinsic so idk what your answer is, can you screenshot it...",
-                   height: 250,
-                   width: 400,
-                   buttons: {"Yes": function () {
-                       $(this).dialog('close');
-                       alert("LET'S GOOOOOO!!");
-                   },
-                             "No": function () {
-                                 $(this).dialog('close');
-                                 alert("PLEASE SHAWTY PLEASE");
-                             }}});});
-           $('#box').click(buttonAction);
+    <script>
+        function confirmAction(){
+            let confirmAction = confirm("Can I really get that second date?");
+            if (confirmAction){
+                alert("LETS GOOOOOOO!!! ");
+            } else{
+                alert("PLEASE SHAWTY PLEASE!!!")
+            }
+        }
     </script>
     <img src="images/pika.jpg" alt="nugget" class="imgspn">
-  
+    <p> btw this is not so intrinsic so idk what your answer is, can you screenshot it...</p>
 </body>
 </html>
