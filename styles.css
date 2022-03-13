@@ -25,9 +25,8 @@ button{
     }
 }
 .imgspn{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: fixed;
+    top: 15px;
     animation-name: spin;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
