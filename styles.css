@@ -1,5 +1,5 @@
 *{
-    background-color: blueviolet;
+    background-color: rgb(163, 112, 211);
 }
 button{
     font-size: large;
@@ -10,7 +10,6 @@ button{
     margin-right: auto;
     
 }
-
 
 @keyframes spin{
     from{
@@ -31,7 +30,7 @@ button{
     animation-name: spin;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 6s;
     -webkit-animation-name: spin;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
