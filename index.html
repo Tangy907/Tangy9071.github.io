@@ -12,20 +12,20 @@
     <input type="button" id="box" value="Can I really get that second date?"/>
     <div id="dialog-confirm"></div>
     <script>$('#box').click(function buttonAction() {
-               $("#dialog-confirm").html("Do you feel good about your self?");
+               $("#dialog-confirm").html("Can I really get that second date?");
                $("#dialog-confirm").dialog({
                    resizable: false,
                    modal: true,
-                   title: "Click Yes or No based on your preference",
+                   title: "",
                    height: 250,
                    width: 400,
                    buttons: {"Yes": function () {
                        $(this).dialog('close');
-                       alert("Yes, I do");
+                       alert("LET'S GOOOOOO!!");
                    },
                              "No": function () {
                                  $(this).dialog('close');
-                                 alert("Nope, I don't");
+                                 alert("PLEASE SHAWTY PLEASE");
                              }}});});
            $('#box').click(buttonAction);
     </script>
