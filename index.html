@@ -5,21 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Down Bad</title>
-    <link rel="stylesheet" href="styles.css">
-        <script>
-        function confirmAction(){
-            let confirmAction = confirm("Could I get a second date?");
-            if (confirmAction){
-                alert("LETS GOOOOOOO!!! ");
-            } else{
-                alert("PLEASE SHAWTY PLEASE!!!")
-            }
-        }
-    </script>
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"><script src="https://code.jquery.com/jquery-1.12.4.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+       
 </head>
 <body>
+    <input type="button" id="box" value="Can I really get that second date?"/>
+    <div id="dialog-confirm"></div>
+    <script>$('#box').click(function buttonAction() {
+               $("#dialog-confirm").html("Do you feel good about your self?");
+               $("#dialog-confirm").dialog({
+                   resizable: false,
+                   modal: true,
+                   title: "Click Yes or No based on your preference",
+                   height: 250,
+                   width: 400,
+                   buttons: {"Yes": function () {
+                       $(this).dialog('close');
+                       alert("Yes, I do");
+                   },
+                             "No": function () {
+                                 $(this).dialog('close');
+                                 alert("Nope, I don't");
+                             }}});});
+           $('#box').click(buttonAction);
+    </script>
     <img src="images/pika.jpg" alt="nugget" class="imgspn">
-    <button onclick="confirmAction()">CLICK ME</button>
+    
     <p>btw this is not so intrinsic so idk what your answer is, can you screenshot it...</p>
 </body>
 </html>
